@@ -1,0 +1,25 @@
+.answer__container{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: auto;
+    position: relative;
+    button{
+        width: 200px;
+        margin: 10px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        color: white;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        font-size: 1.5rem;
+        
+        @media screen and (max-width:450px){
+            width: 150px;
+            font-size: 1.25rem;
+        }
+    }
+}

@@ -1,12 +1,40 @@
 import React from 'react'
 import '../Styles/timerstyles.scss'
+import useWindowDimensions from '../Assets/useWindowDimensions';
+
+
 
 function Timer({ timerColor, timer }) {
-    const style = {
-        fontSize: '3rem',
-        color: timerColor,
-        marginTop: '10px'
+
+
+    const { width } = useWindowDimensions();
+
+
+    let style = {}
+
+
+
+    if (width > 450) {
+
+        style = {
+            fontSize: '3rem',
+            color: timerColor,
+            marginTop: '10px'
+        }
+
+
+    } else {
+
+        style = {
+            fontSize: '1.5rem',
+            color: timerColor,
+            marginTop: '10px'
+        }
+
+
     }
+
+
 
 
 
